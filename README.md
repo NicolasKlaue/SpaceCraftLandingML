@@ -12,22 +12,41 @@ This notebook requires an particular environment. Don't worry, conda environment
 Let's see step by step this new environment.
 
 <h2> Environment creation</h2>
-1 . te a new environment using the following command
+1 . Crete a new environment using the following command
 
+```
 conda create -n marslander python=3.8.8
+```
 
 2. Then activate the new environment
 
+```
 conda activate marslander
+```
 
 <h2> Package installation </h2>
 
 Run the following commands to have in your new envrionment all the needed packages
 
+```
 conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
+```
+
+```
 pip install jupyter
+
 pip install spacy
+
 pip install ribs[all] gym~=0.17.0 Box2D~=2.3.10 tqdm
+
 conda install swig
 
+```
+
 As you can see, I've chosen Jupyter Notebook to run the session. If you feel comfortable with any other code editor, feel free!
+
+It's needed a the executable plugin ffmpeg.exe to run the video with the landing. If you're using another operating system (Linux, iOS), please visit the following link to get the proper file
+
+<a href="https://ffmpeg.org/download.html#build-windows" target="_blank">Get ffmpeg video plugin</a>
+
+
